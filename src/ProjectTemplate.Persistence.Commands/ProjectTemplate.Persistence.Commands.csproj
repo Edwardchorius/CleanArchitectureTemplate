@@ -4,4 +4,13 @@
     <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectTemplate.Domain\ProjectTemplate.Domain.csproj" />
+    <ProjectReference Include="..\ProjectTemplate.Persistence.Queries\ProjectTemplate.Persistence.Queries.csproj" />
+  </ItemGroup>
+
 </Project>
