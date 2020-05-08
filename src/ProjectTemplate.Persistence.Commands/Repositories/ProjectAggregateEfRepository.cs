@@ -7,7 +7,7 @@ using ProjectTemplate.Persistence.Commands.Repositories.Base;
 
 namespace ProjectTemplate.Persistence.Commands.Repositories
 {
-    internal class ProjectAggregateEfRepository<TEntity> : BaseEfMutatableRepository<TEntity>
+    public class ProjectAggregateEfRepository<TEntity> : BaseEfMutatableRepository<TEntity>
         where TEntity : Entity, IAggregateRoot
     {
         public ProjectAggregateEfRepository(ProjectAggregateCommandContext dbContext)
