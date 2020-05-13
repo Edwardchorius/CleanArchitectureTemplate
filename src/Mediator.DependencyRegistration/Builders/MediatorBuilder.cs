@@ -22,7 +22,7 @@ namespace Mediator.DependencyRegistration.Builders
             throw new NotImplementedException();
             // Here you could register PersistableBehavior which contains a IDataUnitOfWork class
             // which you should define separately. It will be for maintaining all operations on 
-            // different databases, like EF, Postgre etc, in a single transaction
+            // different databases, like MSSQL, Postgre etc, in a single transaction
         }
 
         private void RegisterMediator(params Assembly[] assemblies)
